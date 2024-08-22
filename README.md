@@ -1,10 +1,12 @@
 # InventoryGui
-A library that simplifies the creation of chest GUIs for Bukkit/Spigot plugins and 
-allows assigning of the GUI to a specific InventoryHolder. If you are in need of a GUI for text inputs then take a look at [WesJD](https://github.com/WesJD)'s [AnvilGUI](https://github.com/WesJD/AnvilGUI) library.
+A library that simplifies the creation of chest GUIs for Paper plugins and 
+allows assigning of the GUI to a specific InventoryHolder. 
+
+If you are in need of a GUI for text inputs then take a look at [Sytm](https://github.com/Sytm)'s [AnvilGUI](https://github.com/Sytm/AnvilGUI) library fork.
 
 Please note that this is **not a plugin!**
 
-Requires Java 8.
+Requires Java 21.
 
 ## Using InventoryGui
 Take a look at [the examples in the wiki](https://wiki.phoenix616.dev/library:inventorygui:usage) to learn how to create a GUI with this library or use the [InventoryGui Javadocs](https://docs.phoenix616.dev/inventorygui/).
@@ -14,15 +16,15 @@ You can easily depend on the library with maven.
 ```xml
 <repositories>
     <repository>
-        <id>minebench-repo</id>
-        <url>https://repo.minebench.de/</url>
+        <id>firedev-repo</id>
+        <url>https://repo.firedev.uk/repository/maven-public/</url>
     </repository>
 </repositories>
 ```
 ```xml
 <dependencies>
     <dependency>
-        <groupId>de.themoep</groupId>
+        <groupId>uk.firedev</groupId>
         <artifactId>inventorygui</artifactId>
         <!--The following version may not be the latest. Check it before using.-->
         <version>1.6.3-SNAPSHOT</version>
@@ -32,9 +34,6 @@ You can easily depend on the library with maven.
 ```
 As this is not a standalone plugin you have to shade it into your plugin!
 E.g. with the maven-shade-plugin [like this](https://github.com/Minebench/Pipes/blob/048337e7594684353e7360411b1ef6ba8e7223c4/pom.xml#L63-L82).
-
-You can also get development builds directly from the [Minebench Jenkins ci server](https://ci.minebench.de/job/InventoryGui/)
-if you want to manually add it to your project but I strongly advise using a dependency management tool like maven or gradle!
 
 ## License
 InventoryGui is licensed under the following, MIT license:
